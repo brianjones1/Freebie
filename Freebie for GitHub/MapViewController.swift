@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  Freebie for GitHub
 //
 //  Created by Romain Rabouan on 20/12/16.
@@ -7,25 +7,22 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
-    
-    let mapVC = MapViewController()
+class MapViewController: UIViewController, MKMapViewDelegate {
+    @IBOutlet weak var mapView: MKMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        print("Hello World!")
-        print(mapVC)
-        
-        
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-
+    
 }
-
